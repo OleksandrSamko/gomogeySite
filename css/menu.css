@@ -1,0 +1,149 @@
+.reg { position: relative;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+
+.menu ul li{
+    position: relative;
+    padding: 0;
+    height: 28px;
+    width: 170px;
+    left: -3.7%;
+    list-style: none;
+    background: rgba(93, 87, 133, 0.7)
+    }
+
+.menu2 ul li{
+    position: relative;
+    padding: 0;
+    left: 155px;
+    height: 28px;
+    width: 100px;
+    list-style: none;
+    background: rgba(93, 87, 133, 0.7);
+    }
+
+.main table {
+    opacity: 0.7;
+    background-color: lightblue;
+}
+
+.main2 table {
+    background: rgba(93, 87, 133, 0.7);
+}
+    
+.squarel1{position: relative;
+    text-align: center;
+    left: 1100px;
+    width: 220px;
+    top: -50px;
+    height: 200px;
+    background: rgba(93, 87, 133, 0.7);
+    border: 1px solid darkviolet;
+    }
+    
+.form{position: relative;
+    left: 20px;
+    top: 200px;
+    width: 380px;
+    font-size: 20px;}
+    
+.form5 {
+margin-left: auto;
+margin-right: auto;
+width: 72%;
+}
+
+    
+.form2{position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: 7%;
+    width: 72%;
+    top: -331px;
+    text-shadow: darkblue 0 0 1px;
+    background: rgba(93, 87, 133, 0.7);
+    border: 1px solid darkviolet;}
+    
+    
+.form3 {position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: 1%;
+    width: 90%;}
+    
+.form4 {position: relative;
+    left: 1%;
+    width: 72%;
+    top: 20px;
+    text-align: justify;}
+
+.years {position: relative;
+    left: 200px;
+    width: 110px;
+    background: rgba(93, 87, 133, 0.7)}
+    
+.years li {position: relative;
+     list-style: none;
+}
+
+    
+.index {position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 10px;
+    width: 950px;
+    text-align: justify;
+    text-shadow: darkblue 0 0 1px;
+    background: rgba(93, 87, 133, 0.7);}
+
+    
+.index2 {position: relative;
+    left: 480px;
+    top: -230px;
+    width: 400px;}
+
+.index3 {position: relative;
+    left: 30px;
+    top: -170px;
+    width: 890px;}
+    
+    
+.media1{position: relative;
+    left: 490px;
+    width: 600px;
+    top: -285px;
+    text-shadow: darkblue 0 0 1px;}
+ 
+ .mediamain1 { position: relative;
+    left: 330px;
+    width: 785px;
+    top: -282px;
+    text-shadow: darkblue 0 0 1px;   
+ }
+    
+ .solomedia { position: relative;
+    left: 330px;
+    width: 785px;
+    top:-100px;
+ }
+    
+
+.history {position: relative;
+    top: 20px;
+     margin-left: auto;
+    margin-right: auto;
+    width: 950px;
+    color: black;
+    text-shadow: darkblue 0 0 0.5px;
+    background: rgba(93, 87, 133, 0.7);
+    border: 1px solid darkviolet;}
+    
+.history p {
+    text-align: justify;
+}
+
+
+
+
