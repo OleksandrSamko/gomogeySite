@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.7
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
--- Хост: 127.0.0.1:3306
--- Время создания: Апр 25 2019 г., 20:40
--- Версия сервера: 5.6.38
--- Версия PHP: 5.5.38
+-- Host: 127.0.0.1:3306
+-- Generation Time: May 09, 2019 at 08:02 PM
+-- Server version: 5.6.41
+-- PHP Version: 5.5.38
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,39 +19,40 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- База данных: `local_db`
+-- Database: `local_db`
 --
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `Concerts`
+-- Table structure for table `concerts`
 --
 
-CREATE TABLE `Concerts` (
+CREATE TABLE `concerts` (
   `id_conc` int(11) NOT NULL,
   `name` text NOT NULL,
   `id_place` int(11) NOT NULL,
-  `data` date NOT NULL
+  `data` date NOT NULL,
+  `cena` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `Concerts`
+-- Dumping data for table `concerts`
 --
 
-INSERT INTO `Concerts` (`id_conc`, `name`, `id_place`, `data`) VALUES
-(1, 'MAMA', 1, '2019-04-25'),
-(2, 'Grammy', 2, '2019-05-06'),
-(3, 'AMA', 1, '2019-05-23'),
-(4, 'Japan Music Awards', 3, '2019-05-15');
+INSERT INTO `concerts` (`id_conc`, `name`, `id_place`, `data`, `cena`) VALUES
+(1, 'MAMA', 1, '2019-04-25', 52),
+(2, 'Grammy', 2, '2019-05-06', NULL),
+(3, 'AMA', 1, '2019-05-23', NULL),
+(4, 'Japan Music Awards', 3, '2019-05-15', NULL);
 
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `Place`
+-- Table structure for table `place`
 --
 
-CREATE TABLE `Place` (
+CREATE TABLE `place` (
   `id_place` int(11) NOT NULL,
   `name` text NOT NULL,
   `adress` text NOT NULL,
@@ -60,10 +61,10 @@ CREATE TABLE `Place` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `Place`
+-- Dumping data for table `place`
 --
 
-INSERT INTO `Place` (`id_place`, `name`, `adress`, `location`, `vmist`) VALUES
+INSERT INTO `place` (`id_place`, `name`, `adress`, `location`, `vmist`) VALUES
 (1, 'Seoul Arena', 'Songpa-gu, Seoul', 'South Korea', 100000),
 (2, 'Sity Fild', 'New York', 'USA', 70000),
 (3, 'Tokio Doum', 'Bunkyu, Tokio', 'Japan', 55000);
@@ -71,7 +72,7 @@ INSERT INTO `Place` (`id_place`, `name`, `adress`, `location`, `vmist`) VALUES
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `tickets`
+-- Table structure for table `tickets`
 --
 
 CREATE TABLE `tickets` (
@@ -84,10 +85,34 @@ CREATE TABLE `tickets` (
   `sum` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Dumping data for table `tickets`
+--
+
+INSERT INTO `tickets` (`id_ticket`, `id_user`, `id_conc`, `id_place`, `data`, `kilk`, `sum`) VALUES
+(0, 4, 1, 1, '2011-11-20', 1, 1),
+(0, 1, 1, 1, '0000-00-00', 1, 1),
+(0, 14, 1, 1, '0000-00-00', 1, 1),
+(0, 14, 1, 1, '0000-00-00', 1, 1),
+(0, 17, 2, 2, '0000-00-00', 2, 1),
+(0, 17, 2, 2, '2019-05-06', 2, 1),
+(0, 19, 2, 2, '2019-05-06', 2, 1),
+(0, 20, 2, 2, '2019-05-06', 3, 1),
+(0, 20, 2, 2, '2019-05-06', 3, 1),
+(0, 22, 3, 1, '2019-05-23', 2, 1),
+(0, 4, 2, 2, '2019-05-06', 2, 1),
+(0, 24, 1, 1, '2019-04-25', 4, 56),
+(0, 24, 1, 1, '2019-04-25', 4, 56),
+(0, 24, 1, 1, '2019-04-25', 4, 208),
+(0, 24, 1, 1, '2019-04-25', 4, 208),
+(0, 24, 1, 1, '2019-04-25', 5, 260),
+(0, 24, 1, 1, '2019-04-25', 5, 260),
+(0, 24, 1, 1, '2019-04-25', 5, 260);
+
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `users`
+-- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
@@ -99,56 +124,84 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Дамп данных таблицы `users`
+-- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id_user`, `full_name`, `email`, `username`, `password`) VALUES
 (1, 'Юлія', 'miss.alaia@yandex.ru', 'ymkim', '12345'),
-(2, 'Анна', 'anna@mail.ru', 'Anna', '123455');
+(2, 'Анна', 'anna@mail.ru', 'Anna', '123455'),
+(3, '1', '2', '', ''),
+(4, 'ВАЗ-2101', 'ad@s', '', ''),
+(5, 'ВАЗ-2101', 'ad@s', '', ''),
+(6, 'ВАЗ-2101', 'ad@s', '', ''),
+(7, 'ВАЗ-2101', 'ad@s', '', ''),
+(8, 'ВАЗ-2101', 'ad@s', '', ''),
+(9, '', '', '', ''),
+(10, '', '', '', ''),
+(11, '', '', '', ''),
+(12, '', '', '', ''),
+(13, '', '', '', ''),
+(14, 'ntq', 's@c', '', ''),
+(15, 'ntq', 's@c', '', ''),
+(16, 'ntq', 's@c', '', ''),
+(17, 'fewfwr', 's@c', '', ''),
+(18, 'fewfwr', 's@c', '', ''),
+(19, 'ntq', 'ad@s', '', ''),
+(20, 'фыв', 'dw@d', '', ''),
+(21, 'фыв', 'dw@d', '', ''),
+(22, 'adsdas', 'ad@s', '', ''),
+(23, 'ВАЗ-2101', 'ad@s', '', ''),
+(24, 'w', 'ad@sw', '', ''),
+(25, 'w', 'ad@sw', '', ''),
+(26, 'w', 'ad@sw', '', ''),
+(27, 'w', 'ad@sw', '', ''),
+(28, 'w', 'ad@sw', '', ''),
+(29, 'w', 'ad@sw', '', ''),
+(30, 'w', 'ad@sw', '', '');
 
 --
--- Индексы сохранённых таблиц
+-- Indexes for dumped tables
 --
 
 --
--- Индексы таблицы `Concerts`
+-- Indexes for table `concerts`
 --
-ALTER TABLE `Concerts`
+ALTER TABLE `concerts`
   ADD PRIMARY KEY (`id_conc`);
 
 --
--- Индексы таблицы `Place`
+-- Indexes for table `place`
 --
-ALTER TABLE `Place`
+ALTER TABLE `place`
   ADD PRIMARY KEY (`id_place`);
 
 --
--- Индексы таблицы `users`
+-- Indexes for table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id_user`);
 
 --
--- AUTO_INCREMENT для сохранённых таблиц
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT для таблицы `Concerts`
+-- AUTO_INCREMENT for table `concerts`
 --
-ALTER TABLE `Concerts`
+ALTER TABLE `concerts`
   MODIFY `id_conc` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT для таблицы `Place`
+-- AUTO_INCREMENT for table `place`
 --
-ALTER TABLE `Place`
+ALTER TABLE `place`
   MODIFY `id_place` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT для таблицы `users`
+-- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id_user` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_user` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

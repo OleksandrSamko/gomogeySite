@@ -25,7 +25,7 @@ if ($result->num_rows <= 0) {
 $userData = $result->fetch_assoc();
 
 //get concert data
-$sql = "SELECT `id_conc`, `name`, `id_place`, `data` FROM `concerts`
+$sql = "SELECT `id_conc`, `name`, `id_place`, `data`, `cena` FROM `concerts`
 	WHERE (`id_conc` = $concertId)";
 $result = $conn->query($sql);
 if ($result->num_rows <= 0) {
@@ -33,8 +33,9 @@ if ($result->num_rows <= 0) {
 }
 $concertData = $result->fetch_assoc();
 
+$suma = ($concertData['cena'] * $kilk);
 //create ticket
-$sql = "INSERT INTO `tickets` (`id_user`,`id_conc`,`id_place`,`data`,`kilk`,`sum`) VALUES(" . $userData['id_user'] . "," . $concertData['id_conc'] . "," . $concertData['id_place'] . ",'" . $concertData['data'] . "'," . $kilk . ",1)";
+$sql = "INSERT INTO `tickets` (`id_user`,`id_conc`,`id_place`,`data`,`kilk`,`sum`) VALUES(" . $userData['id_user'] . "," . $concertData['id_conc'] . "," . $concertData['id_place'] . ",'" . $concertData['data'] . "'," . $kilk . "," . $suma . ")";
 
 $result = $conn->query($sql);
 
@@ -113,16 +114,17 @@ $result = $conn->query($sql);
 </div>
 <?php
 if ($result !== TRUE) {
-echo '<p>Sorry, bad</p>';
-exit();
+    echo '<p>Sorry, bad</p>';
+    exit();
 }
 echo '<p>Ваш тикет</p>'
-. '<p>Имя: '.$userData['full_name'] .'</p>'
-. 'email: '.$userData['email'].'</p>'
-. 'Назва концерту: '.$concertData['name'] .'</p>'
-. 'Дата: ' .$concertData['data'] .'</p>'
-. 'Количество:' . $kilk .'</p>'
-    . 'Сума: 1' .'</p>';
+    . '<p>Имя: ' . $userData['full_name'] . '</p>'
+    . 'email: ' . $userData['email'] . '</p>'
+    . 'Назва концерту: ' . $concertData['name'] . '</p>'
+    . 'Дата: ' . $concertData['data'] . '</p>'
+    . 'Количество:' . $kilk . '</p>'
+    . 'Цена:' . $concertData['cena'] . '</p>'
+    . 'Сума: ' . $suma . '</p>';
 ?>
 
 </body>

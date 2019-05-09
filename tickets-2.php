@@ -73,7 +73,7 @@
 <?php
 require_once('includes/DB.php');
 //get concert
-$sql = "SELECT `concerts`.`id_conc`, `concerts`.`name` AS 'concertName', `concerts`.`data`, `place`.`name` AS 'placeName', `place`.`adress`, `place`.`location` FROM `concerts` INNER JOIN `place` WHERE `concerts`.`id_place` = `place`.`id_place`";
+$sql = "SELECT `concerts`.`id_conc`, `concerts`.`name` AS 'concertName', `concerts`.`data`, `concerts`.`cena`, `place`.`name` AS 'placeName', `place`.`adress`, `place`.`location` FROM `concerts` INNER JOIN `place` WHERE `concerts`.`id_place` = `place`.`id_place` ORDER BY `concerts`.`data` ";
 $concertRows = $conn->query($sql);
 
 if ($concertRows->num_rows < 0) {
@@ -107,7 +107,7 @@ function FillConcertOptions($conn,$rows)
         echo '<option value='
         . $row['id_conc']
         . '>'
-        . $row['concertName'] . '| Дата:' . $row['data'] . '| Место:' . $row['placeName'] .'| Адресс:' . $row['adress']
+        . $row['concertName'] . '| Дата:' . $row['data'] . '| Цена:' . $row['cena'] . '| Место:' . $row['placeName'] .'| Адресс:' . $row['adress']
         . '</option>';
     }
 }
