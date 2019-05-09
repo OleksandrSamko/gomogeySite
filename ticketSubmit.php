@@ -8,20 +8,23 @@ $kilk = $_POST['kilk'];
 
 require_once('includes/DB.php');
 
-//set user
-$sql = "INSERT INTO `users` (full_name, email)
-VALUES ('$name','$email')";
-
-if ($conn->query($sql) !== TRUE) {
-    throw new Exception("false\n" . $sql . '\n' . $conn->error);
-}
-//get id user
+//get id
 $sql = "SELECT `id_user`,`full_name`,`email` FROM `users`
-	WHERE (`full_name` = '$name' AND `email` = '$email')";
+	WHERE (`email` = '$email')";
 $result = $conn->query($sql);
 if ($result->num_rows <= 0) {
-    throw new Exception("false\n" . $sql . "\n" . $conn->error);
+//set user
+    $sql = "INSERT INTO `users` (full_name, email)
+VALUES ('$name','$email')";
+    $result = $conn->query($sql);
+    if($result){
+        //get id data
+        $sql = "SELECT `id_user`,`full_name`,`email` FROM `users`
+	WHERE (`email` = '$email')";
+        $result = $conn->query($sql);
+    }
 }
+
 $userData = $result->fetch_assoc();
 
 //get concert data
@@ -123,8 +126,8 @@ echo '<p>Ваш тикет</p>'
     . 'Назва концерту: ' . $concertData['name'] . '</p>'
     . 'Дата: ' . $concertData['data'] . '</p>'
     . 'Количество:' . $kilk . '</p>'
-    . 'Цена:' . $concertData['cena'] . '</p>'
-    . 'Сума: ' . $suma . '</p>';
+    . 'Цена: $' . $concertData['cena'] . '</p>'
+    . 'Сума: $ ' . $suma . '</p>';
 ?>
 
 </body>

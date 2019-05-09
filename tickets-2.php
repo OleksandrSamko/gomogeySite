@@ -107,7 +107,7 @@ function FillConcertOptions($conn,$rows)
         echo '<option value='
         . $row['id_conc']
         . '>'
-        . $row['concertName'] . '| Дата:' . $row['data'] . '| Цена:' . $row['cena'] . '| Место:' . $row['placeName'] .'| Адресс:' . $row['adress']
+        . $row['concertName'] . '| Дата:' . $row['data'] . '| Цена: $ ' . $row['cena'] . '| Место:' . $row['placeName'] .'| Адресс:' . $row['adress']
         . '</option>';
     }
 }

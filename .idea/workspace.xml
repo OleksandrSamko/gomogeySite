@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="efe9cc38-a0de-4e4a-8270-9c1b5577fe6b" name="Default Changelist" comment="" />
+    <list default="true" id="efe9cc38-a0de-4e4a-8270-9c1b5577fe6b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reg.txt" beforeDir="false" afterPath="$PROJECT_DIR$/reg.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ticketSubmit.php" beforeDir="false" afterPath="$PROJECT_DIR$/ticketSubmit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tickets-2.php" beforeDir="false" afterPath="$PROJECT_DIR$/tickets-2.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,21 +19,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ticketSubmit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="129" column="7" lean-forward="true" selection-start-line="129" selection-start-column="7" selection-end-line="129" selection-end-column="7" />
-              <folding>
-                <element signature="n#style#0;n#col#0;n#table#0;n#div#0;n#body#1;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#th#0;n#tr#9;n#strong#0;n#table#0;n#div#0;n#body#1;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#a#0;n#th#0;n#tr#9;n#strong#0;n#table#0;n#div#0;n#body#1;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#th#1;n#tr#9;n#strong#0;n#table#0;n#div#0;n#body#1;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#a#0;n#th#1;n#tr#9;n#strong#0;n#table#0;n#div#0;n#body#1;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#th#2;n#tr#9;n#strong#0;n#table#0;n#div#0;n#body#1;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#a#0;n#th#2;n#tr#9;n#strong#0;n#table#0;n#div#0;n#body#1;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#th#3;n#tr#9;n#strong#0;n#table#0;n#div#0;n#body#1;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#a#0;n#th#3;n#tr#9;n#strong#0;n#table#0;n#div#0;n#body#1;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#th#4;n#tr#9;n#strong#0;n#table#0;n#div#0;n#body#1;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#a#0;n#th#4;n#tr#9;n#strong#0;n#table#0;n#div#0;n#body#1;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="484">
+              <caret line="129" column="13" selection-start-line="129" selection-start-column="13" selection-end-line="129" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="303">
+              <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
             </state>
           </provider>
         </entry>
@@ -35,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tickets-2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="88" column="30" selection-start-line="88" selection-start-column="30" selection-end-line="88" selection-end-column="30" />
+            <state relative-caret-position="-272">
+              <caret line="76" column="34" lean-forward="true" selection-start-line="76" selection-start-column="34" selection-end-line="76" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -65,6 +67,9 @@
       <find>$concertData</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -85,21 +90,22 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="bts" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bts" type="462c0819:PsiDirectoryNode" />
+              <item name="gomogeySite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gomogeySite" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -136,17 +142,18 @@
       <updated>1557399423688</updated>
       <workItem from="1557399425557" duration="5010000" />
       <workItem from="1557406641032" duration="7781000" />
+      <workItem from="1557421631271" duration="2204000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12791000" />
+    <option name="totallyTimeSpent" value="14995000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25340393" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25718608" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -185,40 +192,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="47" column="68" selection-start-line="47" selection-start-column="68" selection-end-line="47" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/connection.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tickets-2.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="88" column="30" selection-start-line="88" selection-start-column="30" selection-end-line="88" selection-end-column="30" />
+        <state relative-caret-position="-272">
+          <caret line="76" column="34" lean-forward="true" selection-start-line="76" selection-start-column="34" selection-end-line="76" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ticketSubmit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="129" column="7" lean-forward="true" selection-start-line="129" selection-start-column="7" selection-end-line="129" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#col#0;n#table#0;n#div#0;n#body#1;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#th#0;n#tr#9;n#strong#0;n#table#0;n#div#0;n#body#1;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#a#0;n#th#0;n#tr#9;n#strong#0;n#table#0;n#div#0;n#body#1;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#th#1;n#tr#9;n#strong#0;n#table#0;n#div#0;n#body#1;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#a#0;n#th#1;n#tr#9;n#strong#0;n#table#0;n#div#0;n#body#1;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#th#2;n#tr#9;n#strong#0;n#table#0;n#div#0;n#body#1;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#a#0;n#th#2;n#tr#9;n#strong#0;n#table#0;n#div#0;n#body#1;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#th#3;n#tr#9;n#strong#0;n#table#0;n#div#0;n#body#1;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#a#0;n#th#3;n#tr#9;n#strong#0;n#table#0;n#div#0;n#body#1;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#th#4;n#tr#9;n#strong#0;n#table#0;n#div#0;n#body#1;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#a#0;n#th#4;n#tr#9;n#strong#0;n#table#0;n#div#0;n#body#1;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="484">
+          <caret line="129" column="13" selection-start-line="129" selection-start-column="13" selection-end-line="129" selection-end-column="13" />
         </state>
       </provider>
     </entry>
